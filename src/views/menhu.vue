@@ -5,7 +5,11 @@
 
     <el-card class="box-card" shadow="always">
   <div slot="header" class="clearfix">
+<<<<<<< HEAD
     <span>卡片名称 测试修改冲突</span>
+=======
+    <span>卡片名称测试冲突</span>
+>>>>>>> 35f57c1e3e66b309d57e46b996aaf137f361a1b9
     <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
   </div>
   <div v-for="o in 4" :key="o" class="text item">
