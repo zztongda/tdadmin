@@ -48,6 +48,11 @@ const menuData =[
                 "title": "远程请求",
         "component":() => import('@/views/axios.vue'),
               },
+              {
+                "path": "/highcharts",
+                "title": "折线图表",
+        "component":() => import('@/views/highcharts.vue'),
+              },
             ]
           }
     ]

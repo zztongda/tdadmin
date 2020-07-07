@@ -10,9 +10,21 @@ import axiox from 'axios'
 //import 'normalize.css/normalize.css' // a modern alternative to CSS resets
 
 
-import JsonViewer from 'vue-json-viewer'
-Vue.use(JsonViewer)
+// import JsonViewer from 'vue-json-viewer'
+// Vue.use(JsonViewer)
 Vue.prototype.axiox = axiox
+
+
+//图表 引入
+
+import Highchart from "highcharts/highcharts";
+import HighchartsVue from "highcharts-vue";
+import stockInit from "highcharts/modules/stock";
+
+stockInit(Highchart);
+Vue.use(HighchartsVue);
+
+//图表
 
 
 //import  http from '@/plugins/cc'
