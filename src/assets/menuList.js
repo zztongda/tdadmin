@@ -53,6 +53,11 @@ const menuData =[
                 "title": "折线图表",
         "component":() => import('@/views/highcharts.vue'),
               },
+              {
+                "path": "/tinymce",
+                "title": "富文本编辑器",
+        "component":() => import('@/views/tinymce.vue'),
+              },
             ]
           }
     ]

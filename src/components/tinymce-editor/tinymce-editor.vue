@@ -113,10 +113,11 @@ export default {
         //menubar: 'file edit view insert format tools table help',
         // 此处为图片上传处理函数，这个直接用了base64的图片形式上传图片，
         // 如需ajax上传可参考https://www.tiny.cloud/docs/configure/file-image-upload/#images_upload_handler
-        images_upload_handler: (blobInfo, success, failure) => {
-          const img = 'data:image/jpeg;base64,' + blobInfo.base64()
-          success(img)
-        }
+        images_upload_url: 'http://106.3.45.23/td/vue.php?c=admin&a=uploadss',
+        // images_upload_handler: (blobInfo, success, failure) => {
+        //   const img = 'data:image/jpeg;base64,' + blobInfo.base64()
+        //   success(img)
+        // }
       },
       myValue: this.value
     }
