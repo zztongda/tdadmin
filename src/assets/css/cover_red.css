@@ -1,0 +1,367 @@
+/*覆盖的样式*/
+ .layui-input, .layui-select, .layui-textarea {
+    height: 34px;
+    line-height: 32px;
+}
+.layui-form-label {
+    padding: 7px 10px 7px 15px;
+}
+.layui-textarea {
+    line-height: 26px;
+}
+.layui-upload {
+    text-align: left;
+}
+/*复选框上下居中*/
+ .layui-form-checkbox[lay-skin=primary] {
+    min-height: 30px;
+    line-height: 30px !important;
+}
+.layui-form-checkbox[lay-skin=primary] i {
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+/*复选框上下居中end*/
+
+/*图标按钮*/
+ .layui-btn {
+    background-color: #dd4b39;
+}
+.layui-btn-danger {
+    background-color: #ff8484;
+}
+.layui-btn-normal {
+    background-color: #4a98da;
+}
+.layui-btn-primary {
+    background: #fff;
+}
+.layui-btn-primary:hover {
+    border: solid 1px #BB0833;
+}
+.layui-btn-group .layui-btn-primary:hover {
+    color: #BB0833;
+}
+/*按钮end*/
+
+/*表单*/
+ .layui-form-select dl dd.layui-this {
+    background: #ffe2e9;
+    color: #000;
+}
+input:-internal-autofill-selected {
+    background: #fff;
+}
+.layui-form-checked i, .layui-form-checked:hover i {
+    color: #BB0833;
+    border: solid 1px #d2d2d2;
+}
+.layui-form-checkbox i {
+    border: solid 1px #d2d2d2;
+}
+.layui-form-checked[lay-skin=primary] i {
+    border-color: #BB0833;
+    background-color:#BB0833;
+    color: #fff;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #BB0833;
+}
+.layui-form-onswitch {
+    border-color: #dd4b39;
+    background-color: #dd4b39;
+}
+.layui-form-radio>i:hover, .layui-form-radioed>i {
+    color: #dd4b39;
+}
+.layui-form-checked>span {
+    background-color: #BB0833;
+}
+.layui-form-label {
+    color: #666666;
+}
+textarea {
+    border-color: #e6e6e6;
+}
+/* zzl 2020-3-2疫情管理系统注释 */
+.layui-table-view .layui-table {
+    /*width: 100%;*/
+}
+.welcome-left-container .server-panel span {
+    padding-top: 0;
+    background: #D4EAF9;
+}
+.layui-table-view {
+    border: none;
+}
+.layui-table-view input{
+    margin-right:0 !important;
+}
+.layui-table-box {
+    border: solid 1px #e6e6e6;
+}
+.layui-input-block {
+    margin-left: 105px;
+}
+/*输入框*/
+.layui-form-item {
+    margin-bottom: 10px;}
+    .layui-form-label{
+    line-height: 16px;
+    }
+    .layui-input-block {
+    min-height: 30px;
+}
+.layui-form-item .layui-inline{
+	margin-bottom: 0px;
+}
+.layui-form-mid{
+	    line-height: 10px;
+}
+.layui-form-radio{
+	    margin: 0px 10px 0 0;
+}
+/*.layui-table-body{
+	margin-right:0px;
+	margin-bottom: 0px;
+}*/
+
+/*表单end*/
+
+/*layui选项卡*/
+ .layui-tab-brief>.layui-tab-title .layui-this {
+    color: #BB0833;
+}
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after {
+    border-bottom: 3px solid #BB0833;
+}
+/*layui选项卡end*/
+
+/*数据表格*/
+
+/*蓝色*/
+ .layui-table-header {
+    border: none;
+    background-color: #D4EAF9;
+}
+.layui-table thead tr {
+    border: none;
+    background-color: #fff6f8;
+}
+.layui-table-view .layui-table th {
+    border-right: none;
+}
+.layui-table-fixed-l {
+    box-shadow: none;
+}
+/*无线数据表格*/
+ .no-data-border .layui-table-box, .no-data-border .layui-table td {
+    border: none;
+}
+.layui-table-body {
+    margin-right: 0px;
+}
+/*数据表格工具栏*/
+ .layui-table-fixed .layui-table-header {
+    overflow: hidden;
+}
+/*.layui-table-tool{*
+    min-height:0;
+}
+.layui-table-tool-self{
+    top:-50px;
+}*/
+.layui-input {
+    display:inline;
+}
+.layui-table-fixed .layui-table-header {
+    overflow: hidden;
+}
+/*.layui-table-tool {
+    min-height:0;
+    padding:0;
+    border:0;
+    margin:0;
+}
+
+.layui-table-tool-self{
+    top:-50px;
+}*/
+
+/*数据表格end*/
+
+/*静态表格*/
+ .layui-table[lay-even] tr:nth-child(even) {
+    background-color: #fff;
+}
+.layui-table tr {
+    border-bottom: dashed 1px #e5e5e5
+}
+.layui-table[lay-even] tr:nth-child(even):hover {
+    background-color: #f2f2f2;
+}
+/*静态表格end*/
+
+/*分页样式*/
+ .layui-laypage .layui-laypage-curr .layui-laypage-em {
+    background-color: #dd4b39;
+}
+.layui-laypage a:hover {
+    color: #dd4b39;
+}
+.layui-laypage input:focus, .layui-laypage select:focus {
+    border-color: #BB0833!important;
+}
+.layui-table-page {
+    border: none;
+    box-sizing: border-box;
+}
+/*分页样式end*/
+
+/*导航*/
+ .layui-nav {
+    position: relative;
+    padding: 0 20px;
+    background-color: #BB0833;
+    color: #fff;
+    border-radius: 0px;
+    font-size: 0;
+    box-sizing: border-box;
+    float: right;
+}
+.layui-nav-bar {
+    background-color: #7ecaff;
+}
+.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+    background-color: #BB0833;
+    color: #fff;
+}
+/*导航*/
+
+/*图片上传*/
+ .layui-upload-list>img {
+    width: 100%;
+    height: 100%;
+}
+/*图片上传end*/
+
+/*时间日历*/
+ .layui-laydate .layui-laydate-content .layui-this {
+    background-color: #BB0833 !important;
+    color: #fff!important;
+}
+.layui-laydate-footer span:hover {
+    color: #BB0833 !important;
+}
+.layui-laydate-header i:hover, .layui-laydate-header span:hover {
+    color: #BB0833 !important;
+}
+.layui-laydate-footer span[lay-type=date] {
+    color: #BB0833 !important;
+}
+/*时间日历end*/
+
+/*进度条*/
+ .layui-slider-wrap .layui-slider-wrap-btn {
+    border: 2px solid #BB0833 !important;
+}
+.layui-slider-input-btn i:hover {
+    color: #BB0833;
+}
+.layui-slider .layui-slider-bar {
+    background: #BB0833 !important;
+}
+.layui-slider {
+    height: 8px;
+}
+.layui-slider-wrap {
+    top: -14px;
+}
+.layui-slider-wrap-btn {
+    width: 14px;
+    height: 14px;
+}
+.layui-slider-input {
+    top: -13px;
+}
+/*进度条end*/
+
+/*时间线*/
+ .layui-timeline-axis {
+    color: #BB0833;
+}
+/*时间线end*/
+
+/*弹出层按钮颜色*/
+ .layui-layer-btn .layui-layer-btn0 {
+    border-color: #BB0833 !important;
+    background-color: #BB0833 !important;
+    color: #fff;
+}
+/*弹出层按钮颜色end*/
+
+/*字体颜色*/
+
+/*蓝*/
+ .zt-blue {
+    color: #BB0833;
+}
+/*绿*/
+ .zt-green {
+    color: #00C7A8;
+}
+/*橙*/
+ .zt-orange {
+    color: #E46B33;
+}
+/*红*/
+ .zt-pink {
+    color: #ff8484;
+}
+/*白*/
+ .zt-white {
+    color: #fff
+}
+/*字体颜色end*/
+
+/*时间表*/
+ .WdateDiv .dpButton {
+    background-color:#BB0833 !important;
+}
+.WdateDiv .menuOn {
+    background: #BB0833 !important;
+}
+.layui-elem-quote {
+    border-left: 5px solid #BB0833;
+}
+/*进度条*/
+ .layui-progress-bar {
+    background: #BB0833;
+}
+@media screen and (max-width: 1100px) {
+    .layui-layer-iframe {
+        overflow-y: visible !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+/*下拉菜单字体左对齐*/
+ .layui-form-selected dl dd {
+    text-align: left;
+}
+/*下拉菜单字体左对齐 end*/
+
+/*.layui-form-checked[lay-skin=primary] i{
+	    border-color: #3b98de!important;
+}*/
+ .layui-table-cell {
+    padding:0 5px;
+    text-overflow:clip;
+}
+/*复选框样式修改*/
+
+/*.layui-form-checked span, .layui-form-checked:hover span{*/
+
+/*	background-color: #dd4b39;*/
+
+/*}*/

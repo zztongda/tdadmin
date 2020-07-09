@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.login-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #c1d7dc;
+    position: relative;
+}
+.login-wrapper .title-wrapper{
+    padding-top: 6%;
+}
+.login-wrapper .title-wrapper h1{
+    color: #2772cc;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.login-wrapper .login-main-wrapper{
+    height: 550px;
+    text-align: center;
+    background: url("/assets/images/bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.login-wrapper .login-box{
+    position: absolute;
+    background-color: #fff;
+    display: inline-block;
+    left: 50%;
+    top: 46%;
+    margin-top: -108px;
+    margin-left: -217px;
+    width: 434px;
+    height: 210px;
+    padding: 40px;
+    background: url("/assets/images/login_box.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+}
+.login-wrapper .login-220-box{
+    height: 220px;
+}
+.login-wrapper .login-main-wrapper .login-box .computer-img{
+    position: absolute;
+    left: -217px;
+    bottom: -41px;
+}
+.login-wrapper .login-main-wrapper .login-box .computer-img img{
+    width: 400px;
+}
+.login-wrapper .login-box form{
+    float: right;
+    height: 180px;
+    padding-top: 5%;
+}
+.login-wrapper .login-box form .form-item{
+    padding: 5px 0;
+}
+.login-wrapper .login-box form .form-item input{
+    width: 241px;
+    height: 30px;
+    border: 1px solid #bcbcbc;
+    background-color: #f6f6f6;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+.login-wrapper .login-box form .form-item .captcha{
+    width: 116px;
+}
+.login-wrapper .login-box form .captcha-item img{
+    vertical-align: middle;
+    cursor: pointer
+}
+.login-wrapper .login-box form .captcha-item .captcha-tips{
+   text-align: left;
+}
+.login-wrapper .login-box form .submit-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+}
+.login-wrapper .login-box form .submit-wrapper .login-btn button{
+    background-color: #edae3e;
+    padding: 10px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-wrapper .login-box form .submit-wrapper .remember span{
+    color: #ccc;
+}
+.login-wrapper .login-box form .submit-wrapper .forget a{
+    color: #ccc;
+}
+.login-wrapper .footer-wrapper{
+    position: absolute;
+    bottom: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.login-wrapper .footer-wrapper span{
+    color: #424242;
+}
+.login-wrapper .footer-wrapper div:nth-child(1){
+    padding: 0 30px;
+}
+.login-wrapper .footer-wrapper div:nth-child(2) img{
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.login-wrapper .active{
+    border-bottom: 1px solid blue;
+    padding-bottom: 2px;
+    color: blue;
+}
+.login-wrapper .tab span{
+    cursor:default;
+    margin-right:15px;
+}
+.tab{
+    text-align: center;
+}

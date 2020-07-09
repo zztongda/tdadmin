@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>手机端表单</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="/assets/layui/css/layui.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/cover_gray.css" />
+<link rel="stylesheet" type="text/css" href="/assets/css/td.css" />
+<link rel="stylesheet" type="text/css" href="/assets/font/iconfont.css" />
+<script src="/assets/js/jquery.min.js"></script>
+<script src="./layui/excel.js"></script>
+<script type="text/javascript" src="../assets/layui/layui.js"></script>
+<!--<script src="./layui/layui.all.js"></script>-->
+<link rel="stylesheet" href="./jqweui/lib/weui.min.css">
+<link rel="stylesheet" href="./jqweui/css/jquery-weui.css">
+<style>
+.add{
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 50%;
+    background: #e2f3ff;
+    color: #3b98de;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}
+.form-box-right>tbody>tr>td{
+        position: relative;
+}
+.layui-form-checked[lay-skin=primary] i {
+border-color: #3b98de!important;}
+
+.left-popup-nr{
+    display: block;
+}
+.up-table tr>td .wjm{
+     width: 153px;
+    display: block;
+    word-break: break-all;
+    text-align: left;
+    }
+    .xzwh{
+            /*float: left;*/
+    line-height: 26px;
+    min-width: 63px;
+    margin-bottom: 10px;
+    height: 28px;
+    }
+</style>
+</head>
+
+<body >
+<div class="left-popup-nr">
+	<form class="layui-form" action="" id="editform">
+	    <input type="" name="id"  value=""/>
+		<table border="0" class="form-box-right " style="width: 100%;">
+			<tr>
+				<td>姓名 </td>
+				<td> <input type="text" name="data1"  lay-verify="required" autocomplete="off" class="layui-input"></td>
+				
+			</tr>
+			<tr>
+				<td>手机 </td>
+				<td> <input type="tel" name="data2"  lay-verify="required|phone" autocomplete="off" class="layui-input"></td>
+			</tr>
+			<tr>
+				<td>生日 </td>
+				<td> <input type="text" name="data3" id="birthday" autocomplete="off" class="layui-input"></td>
+			</tr>
+			<tr>
+				<td>上次访问时间</td>
+				<td> <input type="text" name="data4" autocomplete="off" class="layui-input"></td>
+			</tr>
+
+			<tr>
+				<td>修改密码时间</td>
+				<td> <input type="text" name="data5" autocomplete="off" class="layui-input"></td>
+			</tr>
+			
+			<tr>
+				<td >备注1</td>
+				<td >
+				    <input type="hidden" id="radioId" name="data6">
+					<input type="text" name="data7" id="radio_user" lay-verify="required|phone" autocomplete="off" class="layui-input" style="padding-right: 30px;"><span type="radio" class="add">+</span>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>备注2</td>
+				<td >
+				    <input type="hidden" id="checkId" name="data8">
+					<input type="text" name="data9" id="check_user" lay-verify="required|phone" autocomplete="off" class="layui-input" style="padding-right: 30px;"><span type="check" class="add">+</span>
+				</td>
+			</tr>
+
+			
+			<tr>
+				<td>是否农历 </td>
+				<td>
+					<select name="data10" id="IS_LUNAR">
+						<option value="0">否</option>
+						<option value="1">是</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td >性别 </td>
+				<td style="text-align:left;">
+					<input type="radio" name="data11" value="1" title="男">
+                    <input type="radio" name="data11" value="0" title="女" checked>
+				</td>
+			</tr>
+			<tr>
+				<td>复选框 </td>
+				<td style="text-align:left;">
+                    <input type="checkbox" name="data12" lay-skin="primary" value="1" title="写作">
+                    <input type="checkbox" name="data12" lay-skin="primary" value="2" title="阅读">
+                    <input type="checkbox" name="data12" lay-skin="primary" value="3" title="嘤嘤嘤">
+                    <input type="checkbox" name="data12" lay-skin="primary" value="4" title="游戏" disabled="">
+				</td>
+			</tr>
+			<tr>
+				<td>复选框换行 </td>
+				<td style="text-align:left;">
+                    <input type="checkbox" name="data13" lay-skin="primary" value="1" title="aa氨基酸的哈是的">
+                    <input type="checkbox" name="data13" lay-skin="primary" value="2" title="bb是打发斯蒂芬撒的">
+                    <input type="checkbox" name="data13" lay-skin="primary" value="3" title="cc电饭锅是的分公司电饭锅是否">
+                    <input type="checkbox" name="data13" lay-skin="primary" value="4" title="dd认定也让我疼痛" disabled="">
+				</td>
+			</tr>			
+			<tr>
+				<td>登录 </td>
+				<td style="text-align:left;">
+				    <input type="checkbox" name="data14" value="1" lay-skin="switch" lay-text="禁止|允许">
+				</td>
+			</tr>
+			
+			<tr>
+				<td>日期范围 </td>
+				<td style="text-align:left;">
+                    <input type="text" class="layui-input" name="data13" id="servetime" autocomplete="off" placeholder=" - ">
+				</td>
+			</tr>
+				</table>
+				
+	
+	<!--  暂时显示图片上传用的css，需要将优化至td.css  -->	
+   <style>
+        .intform{
+            width:700px;
+            margin:0 auto;
+        }
+        
+        .imgli{
+            width:80px;height:80px;margin:0 10px 10px 0;position:relative;float:left
+        }
+        .loading{
+            width:20px;
+            height:20px;
+            background:url(../assets/loading.gif);
+            background-size:100% 100%;
+            margin:30px auto;
+        }
+        .imgli img{
+            width:100%;height:100%;
+        }
+        .td-accessory-delete,.td-accessory-reload{
+            cursor:pointer;
+        }
+        .img-del{
+            width:15px;position:absolute;height:15px;right:-7px;top:-7px;background:url(../assets/img/del.png) no-repeat;background-size:100% 100%;
+        }
+        .td-right{
+            float:right
+        }
+    </style>
+        <input name="data16" type="hidden" class="layui-input files" template="uploadtpl1" value="">
+		<!--<input name="data16" type="hidden" class="layui-input files" template="uploadtpl5" value="">-->
+		<button class="layui-btn btn-primary" type="button" id="formbut" style="margin: 10px; width:100%;">提交</button>
+		
+	</form>
+</div>
+
+
+<script type="text/javascript">
+
+var formData;
+$.ajax({
+    type: "GET",
+    url: "./?a=save&id="+location.hash.substr(1),
+    dataType: "json",
+    async:false,
+    success: function(data){
+        formData = data;
+        $("[name]:not(:checkbox,:radio)").each(function(){
+            $(this).val(data[$(this).attr('name')]);
+        });
+        //填入复选框的值
+        $(":checkbox").each(function(){
+            var checkName = $(this).attr('name');
+            var val = $(this).val();
+            if(formData[checkName]){
+                var arrey = formData[checkName].split(',');
+                if(arrey.indexOf(val) != -1)
+                    $(this).attr('checked',true);
+                else
+                    $(this).attr('checked',false);
+            }
+        });
+        //填入单选框值
+        $(":radio").each(function(){
+            var radioName = $(this).attr('name');
+            var val = $(this).val();
+            
+            if(formData[radioName].indexOf(val) != -1){
+                $(this).attr('checked',true);
+            }else{
+                $(this).attr('checked',false);
+            }
+        });
+
+    },
+    error : function(){
+        console.log("请求数据出错");
+    }
+});
+
+
+layui.use(['layer','table','form','laydate','element'],function(){
+                    
+var layer = layui.layer;
+var table = layui.table;
+var $ = layui.$;
+var form = layui.form;
+var laydate = layui.laydate;
+var element = layui.element
+
+
+	//信息提交
+    $("#formbut").click(function(){
+        
+        formData={};
+        var saveArr = $("form").serializeArray()
+        for(var i = 0;i < saveArr.length;i++){
+            formData[saveArr[i].name] = saveArr[i].value
+        }
+        
+        //复选框处理
+        var tmpname = "";
+        $("[type='checkbox']:checked").each(function(e){
+            if(tmpname == "" || tmpname != $(this).attr("name")){
+                formData[$(this).attr("name")] = $(this).val();
+            }else{
+                formData[$(this).attr("name")] += "," + $(this).val();
+            }
+            tmpname = $(this).attr("name");
+        });
+        $.ajax({
+             type: "POST",
+             url: "./?a=save",
+             data: formData,
+             dataType: "json",
+             success: function(data){
+                if(data == 1){
+                    layer.msg("操作成功");
+                }
+                console.log(data);
+             },
+             error : function(){
+                console.log(0);
+             }
+        });
+    })
+}) 
+</script>
+<script src="/assets/js/td.js"></script>
+</body>
+</html>
