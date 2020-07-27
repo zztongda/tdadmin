@@ -201,7 +201,7 @@ format="h:m:s"
           desc: '',
           num:'',
           fuwenben:'TinymceEditor',
-          list: [{"xm": "张三","xb": "女", "nl": "18"}],
+          list: [{"xm": "张三","xb": "女", "nl": "18"},],
           lianji: ["zhinan","daohang","dingbudaohang"],
           fileList: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}],
           fileListtu: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}]

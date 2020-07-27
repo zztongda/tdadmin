@@ -249,7 +249,7 @@ $cursor: #fff;
 
 $dark_gray:#889aa4;
 $light_gray:#eee;
-
+html,body,#app{height: 100%; padding: 0px; margin: 0px;}
 .login-container {
   min-height: 100%;
   width: 100%;
